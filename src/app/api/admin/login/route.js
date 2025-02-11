@@ -21,7 +21,7 @@ export const POST = async (request) => {
             return NextResponse.json({ message: "Invalid credentials!", status: 0 })
         }
 
-        return NextResponse.json({ messag: "Admin logged in successfully", staus: 1 });
+        return NextResponse.json({ messag: "Admin logged in successfully", status: 1 });
     } catch (err) {
         console.log(err);
         return NextResponse.json({ message: "Internal server error!", status: 0 });
